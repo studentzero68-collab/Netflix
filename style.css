@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* TEXT */
+.card-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* HERO SECTION */
+.banner-wrap {
+    position: relative;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/73334647-ad51-42a9-b07b-93298cc2a8e1/2b0fca4f-c15c-4622-9efc-572c4a408c30/IN-en-20230605-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 8px solid #222;
+}
+
+/* DARK OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    color: red;
+    font-weight: 700;
+}
+
+.navbar a {
+    background: red;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* HERO CONTENT */
+.banner-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FORM */
+.get-started-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get-started-form input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+}
+
+.get-started-form button {
+    padding: 12px 20px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* INFO SECTION */
+.info-container {
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.tv-container {
+    position: relative;
+}
+
+.tv-container img {
+    width: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.tv-container video {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    width: 73%;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: #757575;
+    padding: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
