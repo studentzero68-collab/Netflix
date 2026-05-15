@@ -1,0 +1,37 @@
+<svg width="72" height="72" viewBox="0 0 72 72" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Download icon</title>
+  <desc>Glowing pink-purple circular download button with dark arrow</desc>
+  <defs>
+    <radialGradient id="softGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="40%" stop-color="#c8389a" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#c8389a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="circleGrad" cx="42%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#e86ec0"/>
+      <stop offset="45%" stop-color="#c93fa0"/>
+      <stop offset="100%" stop-color="#6b1680"/>
+    </radialGradient>
+    <radialGradient id="topShine" cx="42%" cy="22%" r="40%">
+      <stop offset="0%" stop-color="#f5aadf" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f5aadf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bottomDark" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#3a0050" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#3a0050" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="c">
+      <circle cx="36" cy="36" r="30"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="36" cy="37" r="38" fill="url(#softGlow)"/>
+  <circle cx="36" cy="37" r="34" fill="#b02888" fill-opacity="0.22"/>
+
+  <circle cx="36" cy="36" r="30" fill="url(#circleGrad)"/>
+  <circle cx="36" cy="36" r="30" fill="url(#topShine)" clip-path="url(#c)"/>
+  <circle cx="36" cy="36" r="30" fill="url(#bottomDark)" clip-path="url(#c)"/>
+  <circle cx="36" cy="36" r="29.5" fill="none" stroke="#f5b8e8" stroke-width="1" stroke-opacity="0.35"/>
+
+  <rect x="32.5" y="20" width="7" height="20" rx="3.5" fill="#1a0030" fill-opacity="0.8"/>
+  <path d="M24 36 L36 48 L48 36" fill="none" stroke="#1a0030" stroke-width="5.5" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
