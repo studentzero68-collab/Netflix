@@ -35,12 +35,15 @@ body {
 
 .slide-wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .slide {
     position: relative;
     display: inline-block;
+    width: min(250px, 100%);
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
 }
@@ -114,6 +117,8 @@ body {
 .get-started-form {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
     padding-right: 40px;
     border-radius: 5px;
@@ -121,7 +126,8 @@ body {
 
 .get-started-form input {
     padding: 12px;
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -134,6 +140,15 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .get-started-form button {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+        margin-top: 12px;
+    }
 }
 
 .reasons {
@@ -239,4 +254,92 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    .banner-wrap {
+        min-height: 80vh;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .banner-container {
+        padding: 0 20px;
+    }
+
+    .card-title {
+        font-size: 2.4rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .reasons {
+        padding: 40px 20px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .FAQ1 {
+        padding: 40px 20px;
+    }
+
+    .email {
+        padding: 40px 20px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .language {
+        justify-content: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .banner-container {
+        top: 45%;
+        transform: translateY(-45%);
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .reason-card {
+        min-height: auto;
+        padding: 25px 18px;
+    }
+
+    .slide-wrapper {
+        gap: 15px;
+    }
 }
