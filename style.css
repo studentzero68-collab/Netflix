@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #222;
+}
+
+.card-title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-wrap {
+    position: relative;
+    background-image: url("./assets/ZA-en-20260504-TRIFECTA-perspective_94520d24-9c01-4049-a57b-c8b6a0042825_large.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-bottom: 8px solid #960c0c;
+    border-radius: 30px;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.slide {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide:hover {
+    transform: scale(1.08);
+}
+
+.slide span {
+    font-weight: bold;
+    font-size: 75px;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    color: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    color: red;
+    font-weight: 700;
+}
+
+.navbar a {
+    background: red;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.banner-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+.Trending_Now {
+    color: white;
+    background-color: black;
+}
+
+.get-started-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-right: 40px;
+    border-radius: 5px;
+}
+
+.get-started-form input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.get-started-form button {
+    padding-left: 12px;
+    padding-right: 20px;
+    margin-left: 12px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.reasons {
+    background: black;
+    color: white;
+    padding: 60px 70px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.reasons-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    grid-column: 1 / -1;
+}
+
+.reasons-container {
+    display: contents;
+}
+
+.reason-card {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: linear-gradient(
+        145deg,
+        #1c1a33,
+        #210e17,
+        #34103d
+    );
+}
+
+.reason-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.reason-card p {
+    color: #cfcfcf;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.reason-card svg {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.FAQ1 {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+}
+.questions-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: white;
+}
+.email {
+    background-color: black;
+    color: white;
+    padding-right: 70px;
+    text-align: center;
+    opacity: 0.9;
+}
+.footer {
+    background: black;
+    color: #757575;
+    padding: 40px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-links li:hover {
+    text-decoration: underline;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
